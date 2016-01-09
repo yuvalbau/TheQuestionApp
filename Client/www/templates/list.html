@@ -1,0 +1,10 @@
+<ion-view view-title="Question List">
+	<ion-content ng-controller="questionsListCtrl">
+		<div class="list">
+			<a href="#question/{{question.question_id}}" class="item item-text-wrap" ng-repeat="question in questions">
+			<h2 class="question-title">{{question.title}}</h2>
+			<p>{{question.description}}</p> 
+			</a>
+		</div>	  
+	</ion-content>
+</ion-view>
